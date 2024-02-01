@@ -1,3 +1,117 @@
-.header {
-    background-color: #00ffff;
+header {
+    background-color: .00ffff;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+    margin: 10px 10px 10px 10px;
+}
+
+main {
+    background-color: blueviolet;
+    padding: 25px 10px 25px 10px;
+    margin: 10px 10px 10px 10px;
+}
+footer {
+    background-color: yellowgreen;
+    padding: 25px 0px 25px 0px;
+    margin: 10px 10px 10px 10px;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator .container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 75px 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    "total total total total"
+    "ac ac delete div"
+    "one two three times"
+    "four five six plus"
+    "seven eight nine minus"
+    "comma zero equal equal";
+}
+
+.total {
+    background-color: green;
+    grid-area: total;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.ac {
+    grid-area: ac;
+}
+
+.delete {
+    grid-area: delete;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.div {
+    grid-area: div;
+}
+
+.times {
+    grid-area: times;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.comma {
+    grid-area: comma;
 }
